@@ -1,10 +1,10 @@
 socket hangup - Navigate to https instead of http
-ssl certification enabled
-database connection string missing is bad, mysql4 => mysql5
+in postman - ssl certification enabled
+in appsettings - database connection is bad mysql4 => mysql5
 -this means tables are missing for burgeringredient 
-missing transient for repo
-paramaterless constructor missing from model
-missing using directive in Controller
-controller is not extending controllerbase
-returning wrong type in Getall in repo
-returning Null in get by ID
+Startup - missing transient for repo
+Burger model - paramaterless constructor missing from model
+Burger Controller - missing using directive in Controller
+Burger Controller -  is not extending controllerbase
+Burger Repo - returning wrong type in Getall in repo (should be returning iEnumerable)
+Burger Repo - returning Null in get by ID (no 'id' variable in Dapper method) add => new {ID}
